@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
 
     return config;
   },
-  swcMinify: true,
+  turbopack: {},
   compiler: {
     // Enable styled-components for better CSS-in-JS support
     styledComponents: true,

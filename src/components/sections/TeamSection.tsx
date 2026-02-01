@@ -22,10 +22,10 @@ const team = [
     instagram: 'jidanjulian'
   },
   {
-    name: 'Ilma Hasna Hanifah',
+    name: 'Muhammad Rofi Saputra',
     role: 'Ketua 3',
     image: '/images/kutil.jpg',
-    instagram: 'ilmaasnfh'
+    instagram: 'ropisptra'
   },
   {
     name: 'Nabilla Aurellia A. P',
@@ -127,13 +127,13 @@ const container: Variants = {
 
 const item: Variants = {
   hidden: { opacity: 0, y: 20 },
-  show: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { 
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
       duration: 0.5,
       ease: [0.16, 1, 0.3, 1] // easeOutExpo
-    } 
+    }
   }
 };
 
@@ -141,7 +141,7 @@ export default function TeamSection() {
   return (
     <section id="tim" className="py-16 bg-white">
       <Container>
-        <MotionDiv 
+        <MotionDiv
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -156,7 +156,7 @@ export default function TeamSection() {
           </p>
         </MotionDiv>
 
-        <MotionDiv 
+        <MotionDiv
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -192,7 +192,7 @@ export default function TeamSection() {
                 </div>
 
                 {/* Instagram Icon */}
-                <a 
+                <a
                   href={`https://instagram.com/${member.instagram}`}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -200,7 +200,7 @@ export default function TeamSection() {
                   aria-label={`Instagram ${member.name}`}
                 >
                   <div className="bg-gray-800 hover:bg-lisma p-2 rounded-full transition-colors duration-300">
-                    <svg 
+                    <svg
                       className="w-5 h-5 text-white"
                       fill="currentColor"
                       viewBox="0 0 24 24"

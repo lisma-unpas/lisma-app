@@ -35,7 +35,7 @@ export default function TallyRegistrationForm({ accessCode }: TallyRegistrationF
 
     // Load script after component mounts
     const timer = setTimeout(loadTallyScript, 100);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -44,10 +44,10 @@ export default function TallyRegistrationForm({ accessCode }: TallyRegistrationF
       <div className="text-start mb-8">
         <h2 className="text-3xl font-bold text-lisma-text">
           <span className="block">Pendaftaran Anggota Baru</span>
-          <span className="block mt-2 text-2xl font-semibold text-lisma">LISMA UNPAS 2025</span>
+          <span className="block mt-2 text-2xl font-semibold text-lisma">LISMA UNPAS 2026</span>
         </h2>
       </div>
-      
+
       <div >
         <iframe
           data-tally-src={`https://tally.so/embed/woqJyM?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&kode=${encodeURIComponent(accessCode)}`}

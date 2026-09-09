@@ -10,6 +10,18 @@ const team = [
     instagram: ['siabrek']
   },
   {
+    name: 'Laudya',
+    role: 'Sekretaris Umum',
+    image: '/images/executive/sekum.jpg',
+    instagram: ['laudyasuciii']
+  },
+  {
+    name: 'Nasywa',
+    role: 'Bendahara Umum',
+    image: '/images/executive/bendum.jpg',
+    instagram: ['nasywalsh']
+  },
+  {
     name: 'Rizal',
     role: 'Ketua Satu',
     image: '/images/executive/ketu.jpg',
@@ -28,40 +40,10 @@ const team = [
     instagram: ['Syauqi_6413']
   },
   {
-    name: 'Laudya',
-    role: 'Sekretaris Umum',
-    image: '/images/executive/sekum.jpg',
-    instagram: ['laudyasuciii']
-  },
-  {
-    name: 'Nasywa',
-    role: 'Bendahara Umum',
-    image: '/images/executive/bendum.jpg',
-    instagram: ['nasywalsh']
-  },
-  {
-    name: 'Nadya',
-    role: 'Hubungan Masyarakat',
-    image: '/images/executive/humas.jpg',
-    instagram: ['nnarvmp']
-  },
-  {
-    name: 'Arwen',
-    role: 'Digital Content',
-    image: '/images/executive/dc.jpg',
-    instagram: ['arwensiregar']
-  },
-  {
-    name: 'Rizki',
-    role: 'Koordinator FG',
-    image: '/images/executive/koor-fg.jpg',
-    instagram: ['amedfau']
-  },
-  {
-    name: 'Siska',
-    role: 'Koordinator Takre',
-    image: '/images/executive/koor-takre.jpg',
-    instagram: ['siskaabntngk']
+    name: 'Rizko & Kayla',
+    role: 'Koordinator/ Wakil Tesas',
+    image: '/images/executive/koor-waor-tesas.jpg',
+    instagram: ['iikoow_', 'kylanrrd']
   },
   {
     name: 'Rizqi & Ghefira',
@@ -76,16 +58,34 @@ const team = [
     instagram: ['pablohoneyy___', 'syakirazs_']
   },
   {
-    name: 'Rizko & Kayla',
-    role: 'Koordinator/ Wakil Tesas',
-    image: '/images/executive/koor-waor-tesas.jpg',
-    instagram: ['iikoow_', 'kylanrrd']
+    name: 'Siska',
+    role: 'Koordinator Takre',
+    image: '/images/executive/koor-takre.jpg',
+    instagram: ['siskaabntngk']
+  },
+  {
+    name: 'Rizki',
+    role: 'Koordinator FG',
+    image: '/images/executive/koor-fg.jpg',
+    instagram: ['amedfau']
   },
   {
     name: 'Rizki',
     role: 'Sarana Prasarana',
     image: '/images/executive/sapra.jpg',
     instagram: ['rzkigstnn']
+  },
+  {
+    name: 'Nadya',
+    role: 'Hubungan Masyarakat',
+    image: '/images/executive/humas.jpg',
+    instagram: ['nnarvmp']
+  },
+  {
+    name: 'Arwen',
+    role: 'Digital Content',
+    image: '/images/executive/dc.jpg',
+    instagram: ['arwensiregar']
   }
 ];
 
@@ -128,7 +128,7 @@ export default function TeamSection() {
             Dewan Pengurus Harian
           </h2>
           <p className="text-gray-500 mt-2">
-            Dewan Pengurus Harian LISMA 2025/2026
+            Dewan Pengurus Harian LISMA 2026/2027
           </p>
         </MotionDiv>
 

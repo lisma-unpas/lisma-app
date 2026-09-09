@@ -78,7 +78,7 @@ export default function AccessCodeForm({ onCodeVerified }: AccessCodeFormProps) 
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-lisma-text">
               <span className="block">Pendaftaran</span>
-              <span className="block text-2xl font-semibold text-lisma">Anggota Baru 2025</span>
+              <span className="block text-2xl font-semibold text-lisma">Anggota Baru 2026</span>
             </h2>
           </div>
 

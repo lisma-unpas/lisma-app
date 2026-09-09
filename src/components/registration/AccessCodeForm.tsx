@@ -26,7 +26,7 @@ export default function AccessCodeForm({ onCodeVerified }: AccessCodeFormProps) 
     if (showModal) {
       document.addEventListener('mousedown', handleClickOutside);
     }
-    
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -34,7 +34,7 @@ export default function AccessCodeForm({ onCodeVerified }: AccessCodeFormProps) 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     if (!accessCode.trim()) {
       toast.error('Masukkan kode akses terlebih dahulu');
       return;
@@ -81,7 +81,7 @@ export default function AccessCodeForm({ onCodeVerified }: AccessCodeFormProps) 
               <span className="block text-2xl font-semibold text-lisma">Anggota Baru 2025</span>
             </h2>
           </div>
-          
+
           <form className="space-y-2" onSubmit={handleSubmit}>
             <div className="space-y-2">
               <div>
@@ -100,7 +100,7 @@ export default function AccessCodeForm({ onCodeVerified }: AccessCodeFormProps) 
                   onChange={(e) => setAccessCode(e.target.value)}
                 />
               </div>
-              
+
               <div className="text-center pt-2">
                 <button
                   type="button"
@@ -134,46 +134,52 @@ export default function AccessCodeForm({ onCodeVerified }: AccessCodeFormProps) 
 
       {/* Modal */}
       {showModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            <div 
-              ref={modalRef}
-              className="bg-white rounded-lg max-w-md w-full p-6 relative"
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div
+            ref={modalRef}
+            className="bg-white rounded-lg max-w-md w-full p-6 relative"
+          >
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
+              aria-label="Tutup"
             >
-              <button
-                onClick={() => setShowModal(false)}
-                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
-                aria-label="Tutup"
-              >
-                <span className="text-2xl">&times;</span>
-              </button>
-              
-              <h3 className="text-lg font-bold mb-4">Kode Akses</h3>
-              
-              <div className="space-y-4 text-sm text-gray-700">
-                <p>Lakukan pembelian kode akses seharga Rp. 30.000 melalui:</p>
-                
-                <div className="bg-gray-50 p-4 rounded-md">
-                  <p className="font-medium">SEABANK: 901953640212</p>
-                  <p className="text-gray-600">a/n Athhari dwikala fitri</p>
-                  
-                  <div className="my-3 border-t border-gray-200"></div>
-                  
-                  <p className="font-medium">DANA: 082215844210</p>
-                  <p className="text-gray-600">a/n Helma Tiana Ramadhani</p>
-                </div>
-                
+              <span className="text-2xl">&times;</span>
+            </button>
+
+            <h3 className="text-lg font-bold mb-4">Kode Akses</h3>
+
+            <div className="space-y-4 text-sm text-gray-700">
+              <p>Lakukan pembelian kode akses seharga Rp. 30.000 melalui:</p>
+
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="font-medium">BLU BCA 008118833877</p>
+                <p className="text-gray-600">(ZAHRA RANITYAN)</p>
+                {/* <div className="my-3 border-t border-gray-200"></div> */}
+              </div>
+
+              <p>
+                Jika sudah melakukan pembayaran, silakan konfirmasi pembayaran ke Contact Person untuk mendapatkan kode akses.
+              </p>
+
+              <div className="mt-4 p-3 bg-blue-50 rounded-md">
+                <p className="font-medium">Contact Person:</p>
                 <p>
-                  Jika sudah melakukan pembayaran, silakan konfirmasi pembayaran ke Contact Person untuk mendapatkan kode akses.
+                  <a
+                    href="https://wa.me/62881022443279"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    0881022443279
+                  </a>{' '}
+                  (Fajar Pamungkas)
                 </p>
-                
-                <div className="mt-4 p-3 bg-blue-50 rounded-md">
-                  <p className="font-medium">Contact Person:</p>
-                  <p>089512491100 (Serly Devina)</p>
-                </div>
               </div>
             </div>
           </div>
-        )}
+        </div>
+      )}
     </>
   );
 }
